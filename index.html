@@ -148,6 +148,7 @@
             <div class="logo">&lt;/&gt; myriam.dev</div>
             <nav class="nav">
                 <a href="#about">About</a>
+                <a href="#certifications">Certifications</a>
                 <a href="#skills">Skills</a>
                 <a href="#services">Services</a>
                 <a href="#portfolio">Portfolio</a>
@@ -214,7 +215,26 @@
 
     <section id="certifications" class="section">
         <div class="container">
-            <h2 class="section-title">&lt;Certifications/&gt;</h2>
+            <h2 class="section-title">&lt;Certifications & Milestones/&gt;</h2>
+            
+            <div class="card" style="display: flex; align-items: center; gap: 20px; padding: 20px; margin-bottom: 20px;">
+                <div style="flex: 1;">
+                    <h3>Build with AI: Masr Edition</h3>
+                    <p>Issued by <strong>Google & ITI</strong> • 2026</p>
+                    <ul style="margin-top: 10px; color: #555; padding-left: 20px; font-size: 0.95rem;">
+                        <li>Selected as one of 5,000 developers in Egypt to participate.</li>
+                        <li>Gained hands-on experience with Google Cloud Platform (GCP).</li>
+                        <li>Trained on modern AI technologies by Google experts.</li>
+                    </ul>
+                    <div style="display: flex; gap: 15px; margin-top: 15px;">
+                        <a href="javascript:void(0)" onclick="openModal('googleModal')" class="cta-button" style="padding: 8px 15px; font-size: 0.9rem;">View Confirmation</a>
+                    </div>
+                </div>
+                <div style="width: 150px;">
+                    <img src="Goggle-Cloud.jpg" alt="Google Build with AI" style="width: 100%; cursor: pointer; border-radius: 5px; border: 1px solid #ddd;" onclick="openModal('googleModal')">
+                </div>
+            </div>
+
             <div class="card" style="display: flex; align-items: center; gap: 20px; padding: 20px;">
                 <div style="flex: 1;">
                     <h3>AI Fundamentals: Foundations for Understanding AI</h3>
@@ -265,7 +285,7 @@
                     <div class="skill-icon"><i class="fas fa-database"></i></div>
                     <h3>DevOps, Tools & Data</h3>
                     <div class="skill-tags">
-                        <span>Git</span><span>GitHub</span><span>Agile</span><span>Scrum</span><span>SDLC</span><span>CI/CD Fundamentals</span><span>Postman</span><span>Power BI</span><span>ETL</span><span>SQL Server</span>
+                        <span>Git</span><span>GitHub</span><span>Docker</span><span>Cloud (GCP)</span><span>Agile</span><span>Scrum</span><span>Jira</span><span>SDLC</span><span>Project Management</span><span>CI/CD</span><span>Postman</span><span>Power BI</span><span>ETL</span><span>SQL Server</span><span>Overleaf</span>
                     </div>
                 </div>
 
@@ -350,25 +370,55 @@
 
     <section id="portfolio" class="section portfolio-section">
         <div class="container">
-            <h2 class="section-title">&lt;Portfolio/&gt;</h2>
+            <h2 class="section-title">&lt;Portfolio & Course Projects/&gt;</h2>
             <p class="section-subtitle">A showcase of projects demonstrating technical skills and practical problem-solving</p>
             
             <div class="portfolio-grid">
+                <div class="project-card card">
+                    <h3 class="project-title">E-commerce Analytics & Customer Insights</h3>
+                    <p class="project-tech"><strong>Course:</strong> Business Intelligence (BI)</p>
+                    <p class="project-tech"><strong>Tech:</strong> PowerBI, Data Analytics, ETL</p>
+                    <p class="project-description">Developed dynamic and interactive PowerBI dashboards to analyze e-commerce data. Extracted actionable customer insights, tracked sales trends, and visualized key performance indicators to support data-driven decision-making.</p>
+                    <div class="project-links">
+                        <span class="code-link disabled"><i class="fas fa-chart-bar"></i> BI Project</span>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <h3 class="project-title">E-Learning Platform Management</h3>
+                    <p class="project-tech"><strong>Course:</strong> Software Project Management</p>
+                    <p class="project-tech"><strong>Tech:</strong> Agile, Jira, Project Planning, SDLC</p>
+                    <p class="project-description">Simulated and managed the complete software development lifecycle of an E-Learning platform. Applied Agile methodologies using Jira for task tracking, sprint planning, and team coordination to ensure timely and efficient project delivery.</p>
+                    <div class="project-links">
+                        <span class="code-link disabled"><i class="fas fa-tasks"></i> Management Project</span>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <h3 class="project-title">Technical Documentation & Research</h3>
+                    <p class="project-tech"><strong>Tech:</strong> LaTeX, Overleaf</p>
+                    <p class="project-description">Authored, formatted, and maintained complex technical documentation and academic project reports using Overleaf. Ensured professional typesetting, standard formatting compliance, and efficient collaborative editing.</p>
+                    <div class="project-links">
+                        <span class="code-link disabled"><i class="fas fa-file-alt"></i> LaTeX Documents</span>
+                    </div>
+                </div>
+
+                <div class="project-card card">
+                    <h3 class="project-title">CampusEats (Online Food Delivery System)</h3>
+                    <p class="project-tech"><strong>Courses:</strong> System Analysis & Design | Principles of Software Design</p>
+                    <p class="project-tech"><strong>Tech:</strong> Web Dev, Database Management, UML, OOP</p>
+                    <p class="project-description">Conducted comprehensive system analysis and architectural design for a university food delivery platform. Developed structural models to ensure scalability and implemented a functional backend to handle restaurant browsing, cart management, and order volume tracking.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/myriam-hamam/CamouEats" target="_blank" class="code-link"><i class="fas fa-code"></i> Code</a>
+                    </div>
+                </div>
+
                 <div class="project-card card">
                     <h3 class="project-title">TripLink</h3>
                     <p class="project-tech"><strong>Tech:</strong> Full-Stack Development, API Integration</p>
                     <p class="project-description">Developed a seamless travel companion application that facilitates trip planning and itinerary management. Integrated secure user authentication and real-time data handling to ensure a smooth user experience.</p>
                     <div class="project-links">
                         <a href="https://github.com/myriam-hamam/TripLink" target="_blank" class="code-link"><i class="fas fa-code"></i> Code</a>
-                    </div>
-                </div>
-
-                <div class="project-card card">
-                    <h3 class="project-title">CampusEats</h3>
-                    <p class="project-tech"><strong>Tech:</strong> Web Development, Database Management</p>
-                    <p class="project-description">Built a scalable food delivery platform tailored for university campuses, featuring restaurant browsing, cart management, and order tracking. Implemented a modular backend to handle peak order volumes efficiently.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/myriam-hamam/CamouEats" target="_blank" class="code-link"><i class="fas fa-code"></i> Code</a>
                     </div>
                 </div>
 
@@ -404,7 +454,7 @@
                     <p class="project-tech"><strong>Tech:</strong> C, OS concepts, kernel-level programming</p>
                     <p class="project-description">Optimized the PintOS operating system kernel by implementing priority scheduling and improving alarm clock synchronization mechanisms to reduce busy waiting.</p>
                     <div class="project-links">
-                            <span class="code-link disabled"><i class="fas fa-code"></i> Code (Local)</span>
+                        <span class="code-link disabled"><i class="fas fa-code"></i> Code (Local)</span>
                     </div>
                 </div>
                 
@@ -436,7 +486,7 @@
                 </div>
             </div>
             
-            <div class="center-cta">
+            <div class="center-cta" style="margin-top: 30px;">
                 <a href="https://github.com/myriam-hamam" target="_blank" class="cta-button">Visit GitHub Profile</a>
             </div>
         </div>
@@ -532,7 +582,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy;  Developed By Myriam Hamam Ebrahim Abdelmalek ❤️ and code.</p>
+            <p>&copy; 2024 Developed By Myriam Hamam Ebrahim Abdelmalek ❤️ and code.</p>
             <a href="#top" class="back-to-top">↑ Back to Top</a>
         </div>
     </footer>
@@ -545,6 +595,11 @@
     <div id="transcriptModal" class="modal" onclick="this.style.display='none'">
         <span class="close">&times;</span>
         <img class="modal-content" src="Imgeee.jpg">
+    </div>
+    
+    <div id="googleModal" class="modal" onclick="this.style.display='none'">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="Goggle-Cloud.jpg">
     </div>
 
     <script>
