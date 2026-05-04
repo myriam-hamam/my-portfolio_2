@@ -111,6 +111,34 @@
         #contact-form button:hover {
             background-color: #0056b3;
         }
+
+        /* --- MODAL STYLES FOR CERTIFICATES --- */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 800px;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -138,7 +166,7 @@
                     <div class="hero-buttons">
                         <a href="#portfolio" class="cta-button">View Portfolio</a>
                         <a href="#contact" class="cta-button outline">Contact Me</a>
-                        <a href="Myriam_Hamam_Resume.pdf" target="_blank" download class="btn">Download CV</a>
+                        <a href="Myriam Hamam - Resume1.pdf" target="_blank" download class="btn">Download CV</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -158,7 +186,7 @@
                     <p class="bio-text">
                         I’m Myriam Hamam, a Computer Science student majoring in Software Engineering with strong interests in full-stack development, backend architecture, networking systems, and data analytics. I enjoy designing scalable software solutions, configuring secure network infrastructures, analyzing data insights using Power BI, and solving complex computational problems. My goal is to grow into a highly skilled software engineer contributing to impactful, real-world projects while continuously advancing my technical expertise.
                     </p>
-                    <a href="Myriam_Hamam_Resume.pdf" target="_blank" download class="download-cv-btn">
+                    <a href="Myriam Hamam - Resume1.pdf" target="_blank" download class="download-cv-btn">
                         <i class="fas fa-download"></i> Download CV
                     </a>
                 </div>
@@ -175,7 +203,29 @@
                             <li><i class="fas fa-code"></i> Minor: Software Development</li>
                             <li><i class="fas fa-university"></i> Current Status: 3rd Year Student</li>
                         </ul>
+                        <a href="javascript:void(0)" onclick="openModal('transcriptModal')" style="color: #007bff; text-decoration: underline; font-weight: 600;">
+                           <i class="fas fa-file-invoice"></i> View Official Student Transcript
+                        </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">&lt;Certifications/&gt;</h2>
+            <div class="card" style="display: flex; align-items: center; gap: 20px; padding: 20px;">
+                <div style="flex: 1;">
+                    <h3>AI Fundamentals: Foundations for Understanding AI</h3>
+                    <p>Issued by <strong>IBM SkillsBuild</strong> • May 03, 2026</p>
+                    <div style="display: flex; gap: 15px; margin-top: 10px;">
+                        <a href="javascript:void(0)" onclick="openModal('ibmModal')" class="cta-button" style="padding: 8px 15px; font-size: 0.9rem;">View Photo</a>
+                        <a href="https://www.credly.com/go/jJ394jab" target="_blank" class="cta-button outline" style="padding: 8px 15px; font-size: 0.9rem;">Verify Link</a>
+                    </div>
+                </div>
+                <div style="width: 100px;">
+                    <img src="certifecation_IBM.png" alt="IBM Badge" style="width: 100%; cursor: pointer;" onclick="openModal('ibmModal')">
                 </div>
             </div>
         </div>
@@ -487,8 +537,21 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <div id="ibmModal" class="modal" onclick="this.style.display='none'">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="certifecation_IBM.png">
+    </div>
 
+    <div id="transcriptModal" class="modal" onclick="this.style.display='none'">
+        <span class="close">&times;</span>
+        <img class="modal-content" src="Imgeee.jpg">
+    </div>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
